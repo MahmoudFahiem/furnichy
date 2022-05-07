@@ -38,6 +38,7 @@ module.exports = {
   plugins: [
     plugin(function ({ addVariant }) {
       addVariant("is-active", "&.is-active");
+      addVariant("hide", "&.hide");
     }),
   ],
 };

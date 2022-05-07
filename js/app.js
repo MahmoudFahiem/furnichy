@@ -1,3 +1,15 @@
+const addClass = (className, els) => {
+  if (!(NodeList.prototype.isPrototypeOf(els) || Array.isArray(els)))
+    return els.classList.add(className);
+  els.forEach((el) => el.classList.add(className));
+};
+
+const removeClass = (className, els) => {
+  if (!(NodeList.prototype.isPrototypeOf(els) || Array.isArray(els)))
+    return els.classList.remove(className);
+  els.forEach((el) => el.classList.remove(className));
+};
+
 const navbarMenuBtn = () => {
   const menuBtn = document.querySelector("#menu-btn");
   const navMenu = document.querySelector("#nav-menu");
@@ -52,6 +64,33 @@ const headerSlider = (speed) => {
   headerSlider.addEventListener("mouseleave", startSlideAnim);
 };
 
+const filterProducts = () => {
+  const filterBtns = document.querySelectorAll("[data-filter]");
+  const allCards = document.querySelectorAll("[data-cat]");
+
+  const filterBtnClickHandler = (e) => {
+    const relatedCardsSelector = e.currentTarget.getAttribute("data-filter");
+    removeClass("is-active", filterBtns);
+    addClass("is-active", e.target);
+    if (relatedCardsSelector === "all") return removeClass("hide", allCards);
+
+    const relatedCards = document.querySelectorAll(
+      `[data-cat='${relatedCardsSelector}']`
+    );
+
+    const otherCards = document.querySelectorAll(
+      `#products-cards article:not([data-cat='${relatedCardsSelector}'])`
+    );
+
+    removeClass("hide", relatedCards);
+    addClass("hide", otherCards);
+  };
+
+  filterBtns.forEach((filterBtn) => {
+    filterBtn.addEventListener("click", filterBtnClickHandler);
+  });
+};
+
 /**
  * Main
  */
@@ -60,3 +99,4 @@ const HEADER_SLIDER_SPEED = 3000;
 
 navbarMenuBtn();
 headerSlider(HEADER_SLIDER_SPEED);
+filterProducts();

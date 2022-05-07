@@ -243,6 +243,265 @@
       </div>
     </section>
 
+    <!-- Our Products -->
+
+    <section class="our-products">
+      <div class="container mb-32 flex flex-col items-center space-y-20 px-6">
+        <h2
+          class="group inline-block text-4xl font-bold capitalize text-neutral-800"
+        >
+          our products
+          <hr
+            class="mx-auto mt-3 h-2 w-1/4 rounded-full bg-primary-500 transition-all group-hover:w-full"
+          />
+        </h2>
+
+        <!-- Products Filteration  -->
+
+        <ul
+          class="grid grid-cols-2 justify-center gap-4 text-neutral-500 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+        >
+          <li>
+            <button
+              class="is-active min-w-[9rem] border-2 border-neutral-400 bg-transparent bg-primary-500 px-2 py-3 text-xl capitalize transition-all hover:border-primary-500 hover:bg-primary-500 hover:text-white is-active:border-primary-500 is-active:bg-primary-500 is-active:text-white"
+              data-filter="all"
+            >
+              all projects
+            </button>
+          </li>
+          <li>
+            <button
+              class="min-w-[9rem] border-2 border-neutral-400 bg-transparent bg-primary-500 px-2 py-3 text-xl capitalize transition-all hover:border-primary-500 hover:bg-primary-500 hover:text-white is-active:border-primary-500 is-active:bg-primary-500 is-active:text-white"
+              data-filter="houses"
+            >
+              houses
+            </button>
+          </li>
+          <li>
+            <button
+              class="min-w-[9rem] border-2 border-neutral-400 bg-transparent bg-primary-500 px-2 py-3 text-xl capitalize transition-all hover:border-primary-500 hover:bg-primary-500 hover:text-white is-active:border-primary-500 is-active:bg-primary-500 is-active:text-white"
+              data-filter="decoration"
+            >
+              decoration
+            </button>
+          </li>
+          <li>
+            <button
+              class="min-w-[9rem] border-2 border-neutral-400 bg-transparent bg-primary-500 px-2 py-3 text-xl capitalize transition-all hover:border-primary-500 hover:bg-primary-500 hover:text-white is-active:border-primary-500 is-active:bg-primary-500 is-active:text-white"
+              data-filter="furniture"
+            >
+              furniture
+            </button>
+          </li>
+          <li>
+            <button
+              class="min-w-[9rem] border-2 border-neutral-400 bg-transparent bg-primary-500 px-2 py-3 text-xl capitalize transition-all hover:border-primary-500 hover:bg-primary-500 hover:text-white is-active:border-primary-500 is-active:bg-primary-500 is-active:text-white"
+              data-filter="office"
+            >
+              office
+            </button>
+          </li>
+        </ul>
+
+        <!-- Products Cards -->
+
+        <section id="products-cards" class="flex w-full flex-wrap">
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="houses"
+          >
+            <img src="../imgs/pr1.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="decoration"
+          >
+            <img src="../imgs/pr2.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="houses"
+          >
+            <img src="../imgs/pr3.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="furniture"
+          >
+            <img src="../imgs/pr4.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="office"
+          >
+            <img src="../imgs/pr5.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="houses"
+          >
+            <img src="../imgs/pr6.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="furniture"
+          >
+            <img src="../imgs/pr5.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+          <article
+            class="group relative w-full overflow-hidden transition-all duration-700 hover:overflow-visible hide:w-0 hide:opacity-0 md:w-1/2 lg:w-1/3 2xl:w-1/4"
+            data-cat="decoration"
+          >
+            <img src="../imgs/pr3.png" />
+            <section
+              class="absolute top-full left-0 z-10 flex h-full w-full flex-col items-start justify-between space-y-6 bg-neutral-800 bg-opacity-60 p-10 text-white opacity-0 transition-all duration-700 group-hover:top-0 group-hover:opacity-100"
+            >
+              <h5 class="text-2xl font-bold capitalize">bedroom</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                accusantium dolores possimus autem ab, iusto pariatur,
+              </p>
+              <!-- Price -->
+              <p class="text-2xl font-bold text-primary-500">250 EGP</p>
+              <div>
+                <button
+                  class="absolute top-full left-1/2 m-0 h-12 w-12 -translate-y-1/2 -translate-x-1/2 rounded-full bg-neutral-800 text-white transition-colors hover:bg-primary-500"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+    </section>
+
     <script
       src="https://kit.fontawesome.com/9610ef7c72.js"
       crossorigin="anonymous"
