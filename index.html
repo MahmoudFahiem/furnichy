@@ -8,6 +8,55 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- Navabr -->
+
+    <nav class="container relative p-6">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+
+        <a href="#" class="flex items-center space-x-2">
+          <img class="h-16" src="imgs/logo.png" alt="logo" />
+          <span class="text-4xl font-light capitalize">furnichy</span>
+        </a>
+
+        <!-- Links -->
+
+        <div
+          id="nav-menu"
+          class="pointer-events-none absolute top-full right-0 flex w-full flex-col space-y-3 rounded-md bg-white p-5 font-bold capitalize opacity-0 shadow-lg transition duration-500 is-active:pointer-events-auto is-active:opacity-100 md:pointer-events-auto md:static md:flex-row md:justify-center md:space-y-0 md:space-x-6 md:bg-transparent md:p-0 md:opacity-100 md:shadow-none"
+        >
+          <a href="#" class="transition-colors hover:text-primary-500">home</a>
+          <a href="#" class="transition-colors hover:text-primary-500"
+            >products</a
+          >
+          <a href="#" class="transition-colors hover:text-primary-500"
+            >about us</a
+          >
+
+          <a href="#" class="transition-colors hover:text-primary-500"
+            >contact us</a
+          >
+        </div>
+
+        <div class="flex space-x-5">
+          <!-- Button -->
+
+          <button class="block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <!-- Hamburger Button -->
+
+          <button
+            id="menu-btn"
+            class="text-darkBlue hover:text-brightRed block text-lg focus:outline-none md:hidden md:text-sm"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
     <script
       src="https://kit.fontawesome.com/9610ef7c72.js"
       crossorigin="anonymous"
