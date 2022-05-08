@@ -83,9 +83,14 @@ const goToUpBtn = () => {
 
 const formValidation = () => {
   const form = document.querySelector("#contact-form form");
+  const formValidated = false;
 
   const printError = (err, validationEl) => {
-    if (err.length === 0) return validationEl.setCustomValidity("");
+    if (err.length === 0) {
+      validationEl.setCustomValidity("");
+      return (formValidated = true);
+    }
+
     const errPlaceholder =
       validationEl.nextElementSibling.querySelector(".error");
     validationEl.setCustomValidity(" ");
@@ -157,7 +162,7 @@ const formValidation = () => {
       validate(validation[type], validation[type].el);
     }
 
-    e.preventDefault();
+    if (!formValidated) e.preventDefault();
   });
 };
 
