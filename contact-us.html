@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furnichy | Contact Us</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navabr -->
+
+    <nav class="container relative px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+
+        <a href="#" class="flex items-center space-x-2">
+          <img class="h-10" src="imgs/logo.png" alt="logo" />
+          <span class="text-4xl font-light capitalize">furnichy</span>
+        </a>
+
+        <!-- Links -->
+
+        <div
+          id="nav-menu"
+          class="pointer-events-none absolute top-full right-0 z-10 flex w-full flex-col space-y-3 rounded-md bg-white p-5 font-bold capitalize opacity-0 shadow-lg transition-all duration-500 is-active:pointer-events-auto is-active:translate-y-4 is-active:opacity-100 md:pointer-events-auto md:static md:translate-y-0 md:flex-row md:justify-center md:space-y-0 md:space-x-6 md:bg-transparent md:p-0 md:opacity-100 md:shadow-none"
+        >
+          <a
+            href="index.html"
+            class="transition-colors hover:text-primary-500 is-active:text-primary-500"
+            >home</a
+          >
+          <a
+            href="index.html#our-products"
+            class="transition-colors hover:text-primary-500 is-active:text-primary-500"
+            >products</a
+          >
+          <a
+            href="#"
+            class="transition-colors hover:text-primary-500 is-active:text-primary-500"
+            >about us</a
+          >
+
+          <a
+            href="contact-us.html"
+            class="is-active transition-colors hover:text-primary-500 is-active:text-primary-500"
+            >contact us</a
+          >
+        </div>
+
+        <div class="flex space-x-5">
+          <!-- Button -->
+
+          <button class="block">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <!-- Hamburger Button -->
+
+          <button
+            id="menu-btn"
+            class="text-darkBlue block text-lg hover:text-primary-500 focus:outline-none md:hidden md:text-sm"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative mb-32 h-[80vh]">
+      <div id="header-slider" class="h-full">
+        <div class="slides-container">
+          <article
+            class="slide is-active absolute left-0 top-0 h-full w-full bg-[url('../imgs/slide1.jpg')] bg-center capitalize text-white opacity-0 transition-opacity duration-700 is-active:opacity-100"
+          >
+            <div
+              class="container flex h-full flex-col items-center justify-center space-y-6 text-center"
+            >
+              <h1
+                class="max-w-xs text-5xl font-bold leading-tight md:max-w-none lg:text-6xl"
+              >
+                best furniture design
+              </h1>
+              <p class="text-xl font-light md:text-2xl">
+                available in furnichy
+              </p>
+            </div>
+          </article>
+          <article
+            class="slide absolute left-0 top-0 h-full w-full bg-[url('../imgs/slide2.jpg')] bg-center capitalize text-white opacity-0 transition-opacity duration-700 is-active:opacity-100"
+          >
+            <div
+              class="container flex h-full flex-col items-center justify-center space-y-6 text-center"
+            >
+              <h1
+                class="max-w-xs text-5xl font-bold leading-tight md:max-w-none lg:text-6xl"
+              >
+                best furniture design
+              </h1>
+              <p class="text-xl font-light md:text-2xl">
+                available in furnichy
+              </p>
+            </div>
+          </article>
+          <article
+            class="slide absolute left-0 top-0 h-full w-full bg-[url('../imgs/slide3.jpg')] bg-center capitalize text-white opacity-0 transition-opacity duration-700 is-active:opacity-100"
+          >
+            <div
+              class="container flex h-full flex-col items-center justify-center space-y-6 text-center"
+            >
+              <h1
+                class="max-w-xs text-5xl font-bold leading-tight md:max-w-none lg:text-6xl"
+              >
+                best furniture design
+              </h1>
+              <p class="text-xl font-light md:text-2xl">
+                available in furnichy
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Slider Arrows -->
+
+        <div class="slider-arrows text-xl text-white">
+          <button
+            class="prev-slide absolute top-3/4 left-10 h-16 w-16 rounded-full bg-neutral-800 bg-opacity-40 transition-colors hover:bg-neutral-400 hover:bg-opacity-40 md:top-1/2"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            class="next-slide absolute top-3/4 right-10 h-16 w-16 rounded-full bg-neutral-800 bg-opacity-40 transition-colors hover:bg-neutral-400 hover:bg-opacity-40 md:top-1/2"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Form -->
+
+    <section id="contact-form">
+      <div class="container mx-auto mb-32 max-w-3xl px-6">
+        <div class="flex flex-col space-y-12">
+          <div class="text-center">
+            <h2
+              class="just group inline-block text-4xl font-bold capitalize text-neutral-800"
+            >
+              contact us
+              <hr
+                class="mx-auto mt-3 h-2 w-1/4 rounded-full bg-primary-500 transition-all group-hover:w-full"
+              />
+            </h2>
+          </div>
+
+          <!-- Form -->
+
+          <form class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                class="peer w-full rounded-md border border-stone-300 bg-stone-100 px-3 py-2 text-neutral-600 ring-primary-500 placeholder:capitalize invalid:border-error focus:outline-none focus:ring"
+              />
+              <div
+                class="hidden items-center space-x-2 pt-2 text-error peer-invalid:flex"
+              >
+                <i class="fa-regular fa-circle-xmark"></i>
+                <p class="error"></p>
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="email"
+                class="peer w-full rounded-md border border-stone-300 bg-stone-100 px-3 py-2 text-neutral-600 ring-primary-500 placeholder:capitalize invalid:border-error focus:outline-none focus:ring"
+              />
+              <div
+                class="hidden items-center space-x-2 pt-2 text-error peer-invalid:flex"
+              >
+                <i class="fa-regular fa-circle-xmark"></i>
+                <p class="error"></p>
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="subject"
+                class="peer w-full rounded-md border border-stone-300 bg-stone-100 px-3 py-2 text-neutral-600 ring-primary-500 placeholder:capitalize invalid:border-error focus:outline-none focus:ring"
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="phone"
+                class="peer w-full rounded-md border border-stone-300 bg-stone-100 px-3 py-2 text-neutral-600 ring-primary-500 placeholder:capitalize invalid:border-error focus:outline-none focus:ring"
+              />
+              <div
+                class="hidden items-center space-x-2 pt-2 text-error peer-invalid:flex"
+              >
+                <i class="fa-regular fa-circle-xmark"></i>
+                <p class="error"></p>
+              </div>
+            </div>
+
+            <div class="col-start-1 sm:col-end-3">
+              <textarea
+                id="message"
+                rows="4"
+                class="peer w-full rounded-md border border-stone-300 bg-stone-100 px-3 py-2 text-neutral-600 ring-primary-500 placeholder:capitalize invalid:border-error focus:outline-none focus:ring"
+                placeholder="your message"
+              ></textarea>
+              <div
+                class="hidden items-center space-x-2 pt-2 text-error peer-invalid:flex"
+              >
+                <i class="fa-regular fa-circle-xmark"></i>
+                <p class="error"></p>
+              </div>
+            </div>
+
+            <div class="col-start-1 flex justify-center sm:col-end-3">
+              <button
+                type="submit"
+                class="bg-neutral-900 py-2 px-4 text-lg capitalize text-white transition-colors hover:bg-primary-500"
+              >
+                submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="bg-neutral-900 text-neutral-400">
+        <div
+          class="container flex flex-col-reverse justify-between space-y-8 px-6 py-10 lg:flex-row lg:space-y-0 lg:space-x-8"
+        >
+          <!-- About us and social links container -->
+
+          <section
+            class="flex flex-col-reverse items-center justify-between space-y-12 lg:w-1/3 lg:flex-col lg:items-start lg:space-y-8"
+          >
+            <h4
+              class="group hidden text-xl font-bold uppercase text-neutral-400 lg:block"
+            >
+              furnichy
+              <hr
+                class="mt-2 h-1 w-1/4 rounded-full bg-primary-500 transition-all group-hover:w-full"
+              />
+            </h4>
+
+            <p class="max-w-full text-lg leading-normal text-neutral-600">
+              Sed ut perspiciatis unde omnis iste natus error sit volu ptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi.
+            </p>
+
+            <!-- Social Links -->
+
+            <ul id="social-links" class="flex justify-center space-x-4">
+              <li>
+                <a
+                  href="#"
+                  class="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:text-primary-500 lg:h-6 lg:w-6"
+                >
+                  <i class="fa-brands fa-facebook-square h-full w-full"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex h-8 w-8 items-center justify-center rounded-full bg-white text-lg text-neutral-900 transition-colors hover:bg-primary-500 lg:h-6 lg:w-6 lg:text-base"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:text-primary-500 lg:h-6 lg:w-6"
+                >
+                  <i class="fa-brands fa-twitter h-full w-full"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:text-primary-500 lg:h-6 lg:w-6"
+                >
+                  <i class="fa-brands fa-pinterest h-full w-full"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:text-primary-500 lg:h-6 lg:w-6"
+                >
+                  <i class="fa-brands fa-instagram h-full w-full"></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Webiste Links -->
+
+          <section
+            class="flex flex-none flex-col-reverse items-center justify-between space-y-12 lg:flex-col lg:items-start lg:space-y-8"
+          >
+            <h4
+              class="group hidden text-xl font-bold uppercase text-neutral-400 lg:block"
+            >
+              website links
+              <hr
+                class="mt-2 h-1 w-1/4 rounded-full bg-primary-500 transition-all group-hover:w-full"
+              />
+            </h4>
+            <ul
+              class="flex flex-1 flex-col justify-between space-y-3 capitalize"
+            >
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >products</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >about us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >privacy policy</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <!-- Updates in your inbox and conact us -->
+
+          <section
+            class="flex flex-col justify-between space-y-6 lg:w-1/3 lg:items-start"
+          >
+            <h4
+              class="group hidden text-xl font-bold uppercase text-neutral-400 lg:block"
+            >
+              contact us
+              <hr
+                class="mt-2 h-1 w-1/4 rounded-full bg-primary-500 transition-all group-hover:w-full"
+              />
+            </h4>
+
+            <!-- Contact Us-->
+
+            <div class="flex flex-col items-center space-y-3 lg:items-start">
+              <address>
+                123 Second Street Fifth Avenue, Manhattan, New York
+              </address>
+              <a href="tel:+987 654 3210">+987 654 3210</a>
+            </div>
+
+            <!-- Subscribe with email -->
+
+            <form class="flex space-x-2">
+              <input
+                type="text"
+                placeholder="updates in your inbox"
+                class="flex-1 rounded-full px-4 focus:outline-none focus:ring focus:ring-primary-500"
+              />
+              <button
+                type="submit"
+                class="rounded-full bg-primary-500 py-2 px-6 font-bold capitalize transition-colors hover:bg-primary-600"
+              >
+                go
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <!-- Copy rights -->
+
+      <div class="bg-neutral-800">
+        <p class="container p-6 text-center text-neutral-400">
+          Copyright 2020. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Go to Up Button -->
+
+    <button
+      id="goto-up-btn"
+      class="pointer-events-none fixed bottom-10 right-10 z-20 h-16 w-16 bg-neutral-800 text-lg font-bold text-white opacity-0 transition-all duration-700 hover:bg-primary-500 is-active:pointer-events-auto is-active:opacity-100"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script
+      src="https://kit.fontawesome.com/9610ef7c72.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/contact-us.js"></script>
+  </body>
+</html>
