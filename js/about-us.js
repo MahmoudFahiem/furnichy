@@ -75,7 +75,7 @@ const goToUpBtn = () => {
     });
   });
 
-  document.body.addEventListener("scroll", () => {
+  document.addEventListener("scroll", () => {
     if (scrollY >= 800) return gotoBtnUI.classList.add("is-active");
     gotoBtnUI.classList.remove("is-active");
   });
