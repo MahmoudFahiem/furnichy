@@ -81,6 +81,36 @@ const goToUpBtn = () => {
   });
 };
 
+const cart = () => {
+  const counter = {
+    counterVal: 0,
+    counterUI: document.querySelector("#cart-counter"),
+    incCounter: function () {
+      this.counterVal++;
+    },
+    decCounter: function () {
+      if (this.counterVal > 0) return this.counter--;
+    },
+    saveCounterVal: function () {
+      localStorage.setItem("counter", this.counterVal);
+    },
+    getCounterVal: function () {
+      return localStorage.getItem("counter");
+    },
+    setCounterVal: function (counterVal) {
+      this.counterVal = counterVal;
+    },
+    printCounter: function () {
+      return (this.counterUI.textContent = this.counterVal);
+    },
+  };
+
+  const counterVal = counter.getCounterVal();
+  if (counterVal) counter.setCounterVal(counterVal);
+  else counter.saveCounterVal();
+  counter.printCounter();
+};
+
 /**
  * Main
  */
@@ -90,3 +120,4 @@ const HEADER_SLIDER_SPEED = 3000;
 navbarMenuBtn();
 headerSlider(HEADER_SLIDER_SPEED);
 goToUpBtn();
+cart();
