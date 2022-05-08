@@ -603,6 +603,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2945,6 +2949,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .is-active\:text-white.is-active {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.is-active\:text-primary-500.is-active {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .is-active\:opacity-100.is-active {

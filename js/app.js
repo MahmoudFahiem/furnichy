@@ -91,6 +91,23 @@ const filterProducts = () => {
   });
 };
 
+const goToUpBtn = () => {
+  const gotoBtnUI = document.querySelector("#goto-up-btn");
+
+  gotoBtnUI.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+
+  document.addEventListener("scroll", () => {
+    if (scrollY >= 800) return gotoBtnUI.classList.add("is-active");
+    gotoBtnUI.classList.remove("is-active");
+  });
+};
+
 /**
  * Main
  */
@@ -100,3 +117,4 @@ const HEADER_SLIDER_SPEED = 3000;
 navbarMenuBtn();
 headerSlider(HEADER_SLIDER_SPEED);
 filterProducts();
+goToUpBtn();
